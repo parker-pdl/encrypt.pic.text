@@ -25,6 +25,11 @@ jobs:
           cp steganography-app.html www/index.html
           npx cap init "Encrypt By Parker Data Link" com.stealthsnap --web-dir=www
           npx cap add android
+          cat >> android/app/build.gradle <<'EOF'
+          dependencies {
+              implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.22')
+          }
+          EOF
       - name: Create upload keystore on first run
         id: ks
         run: |
