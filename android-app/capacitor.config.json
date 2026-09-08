@@ -1,0 +1,13 @@
+{
+  "appId": "com.parkerdatalink.encrypt",
+  "appName": "Secret Vault",
+  "webDir": "www",
+  "server": {
+    "url": "https://encrypt.parkerdata.link/?app=1",
+    "cleartext": false
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0a0e27"
+  }
+}
